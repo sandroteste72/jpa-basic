@@ -21,7 +21,7 @@ dependencies {
 
     // Drive JDBC que sera utilizado pelos frameworks que implementam o JPA
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.26'
 
     // === Necessarios para a parte 2 do curso. Essas sao as implementacoes do JPA (Hibernate e EclipseLink) e o automatizador de criacao de Metamodels ===
 

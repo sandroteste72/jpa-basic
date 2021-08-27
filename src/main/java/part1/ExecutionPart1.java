@@ -22,14 +22,14 @@ public class ExecutionPart1 {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         // 2.1 - Criar instancias para serem adicionadas no banco de dados
-        Estado estadoParaAdicionar = new Estado("Rio de Janeiro", "RJ");
-        Aluno alunoParaAdicionar = new Aluno("Daniel", 29, estadoParaAdicionar);
+        State stateToAdd = new State("Rio de Janeiro", "RJ");
+        Student studentToAdd = new Student("Daniel", 29, stateToAdd);
 
         // 2.2 - Iniciar uma trasacao para adiconar as instancias no banco de dados
         entityManager.getTransaction().begin();
 
-        entityManager.persist(estadoParaAdicionar);
-        entityManager.persist(alunoParaAdicionar);
+        entityManager.persist(stateToAdd);
+        entityManager.persist(studentToAdd);
 
         entityManager.getTransaction().commit();
 

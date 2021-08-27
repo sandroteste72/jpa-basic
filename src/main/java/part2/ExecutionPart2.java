@@ -20,20 +20,20 @@ public class ExecutionPart2 {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         // 2.1 - Criar instancias para serem adicionadas no banco de dados
-        Estado estadoParaAdicionar = new Estado("Rio de Janeiro", "RJ");
-        Aluno alunoParaAdicionar = new Aluno("Daniel", 29, estadoParaAdicionar);
+        State stateToAdd = new State("Rio de Janeiro", "RJ");
+        Student studentToAdd = new Student("Daniel", 29, stateToAdd);
 
         // 2.2 - Iniciar uma trasacao para adiconar as instancias no banco de dados
         entityManager.getTransaction().begin();
 
-        entityManager.persist(estadoParaAdicionar);
-        entityManager.persist(alunoParaAdicionar);
+        entityManager.persist(stateToAdd);
+        entityManager.persist(studentToAdd);
 
         entityManager.getTransaction().commit();
 
         // 3 - Resgatar instâncias no banco de dados
-//        Estado estadoEncontrado = entityManager.find(Estado.class, 1);
-//        Aluno alunoEncontrado = entityManager.find(Aluno.class, 1);
+//        State estadoEncontrado = entityManager.find(State.class, 1);
+//        Student alunoEncontrado = entityManager.find(Student.class, 1);
 //
 //        System.out.println(estadoEncontrado);
 //        System.out.println(alunoEncontrado);
