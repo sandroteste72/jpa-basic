@@ -31,7 +31,8 @@ dependencies {
 
     // Implementacao EclipseLink
     // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
-    //compile group: 'org.eclipse.persistence', name: 'eclipselink', version: '2.7.6'
+    //implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.2'
+
 
     // Automatizador de criacao de Metamodels
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen

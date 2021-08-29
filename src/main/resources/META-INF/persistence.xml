@@ -33,7 +33,7 @@
 
         <!-- Implementacao do JPA -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <!--  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+<!--          <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
 
         <!-- Classes (entidades) que serao mapeadas -->
         <class>classes.Student</class>

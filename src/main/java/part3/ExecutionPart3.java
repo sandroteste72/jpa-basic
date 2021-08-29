@@ -10,7 +10,6 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
-
 public class ExecutionPart3 {
 
     public static void main(String[] args) {
@@ -73,22 +72,22 @@ public class ExecutionPart3 {
         // 2.4 - JPQL
 
 //        // Trazendo somente 1 resultado
-//        String jpql = "select a from Student a where a.name = :name";
-//        Student studentJPQL = entityManager
-//                .createQuery(jpql, Student.class)
-//                .setParameter("name", name)
-//                .getSingleResult();
-//
-//        // Trazendo uma lista como resultado
-//        String jpqlList = "select a from Student a where a.state = :state";
-//        List<Student> studentJPQLList = entityManager
-//                .createQuery(jpqlList, Student.class)
-//                .setParameter("state", stateToAdd)
-//                .getResultList();
-//
-//        // Resultados das consultas acima
-//        System.out.println("Query studentJPQL: " + studentJPQL);
-//        studentJPQLList.forEach(Student -> System.out.println("Query studentJPQLList: " + Student));
+        String jpql = "select a from Student a where a.name = :name";
+        Student studentJPQL = entityManager
+                .createQuery(jpql, Student.class)
+                .setParameter("name", name)
+                .getSingleResult();
+
+        // Trazendo uma lista como resultado
+        String jpqlList = "select a from Student a where a.state = :state";
+        List<Student> studentJPQLList = entityManager
+                .createQuery(jpqlList, Student.class)
+                .setParameter("state", stateToAdd)
+                .getResultList();
+
+        // Resultados das consultas acima
+        System.out.println("Query studentJPQL: " + studentJPQL);
+        studentJPQLList.forEach(Student -> System.out.println("Query studentJPQLList: " + Student));
 
         // =============================================================================================================
 
