@@ -25,7 +25,7 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, int age, Estado state) {
+    public Student(String name, int age, State state) {
         this.name = name;
         this.age = age;
         this.state = state;
@@ -55,11 +55,11 @@ public class Student {
         this.age = age;
     }
 
-    public Estado getState() {
+    public State getState() {
         return state;
     }
 
-    public void setState(Estado state) {
+    public void setState(State state) {
         this.state = state;
     }
 
@@ -67,9 +67,9 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", nome='" + name + '\'' +
-                ", idade=" + age +
-                ", estado=" + state +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", state=" + state +
                 '}';
     }
 }

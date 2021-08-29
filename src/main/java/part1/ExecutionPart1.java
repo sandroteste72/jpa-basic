@@ -1,7 +1,7 @@
 package part1;
 
-import classes.Aluno;
-import classes.Estado;
+import classes.Student;
+import classes.State;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -23,7 +23,7 @@ public class ExecutionPart1 {
 
         // 2.1 - Criar instancias para serem adicionadas no banco de dados
         State stateToAdd = new State("Rio de Janeiro", "RJ");
-        Student studentToAdd = new Student("Daniel", 29, stateToAdd);
+        Student studentToAdd = new Student("Sandro", 48, stateToAdd);
 
         // 2.2 - Iniciar uma trasacao para adiconar as instancias no banco de dados
         entityManager.getTransaction().begin();
@@ -36,6 +36,5 @@ public class ExecutionPart1 {
         // 3 - Encerrar o gerenciador de entidades e encerrar a fabrica de gerenciadores de entidade.
         entityManager.close();
         entityManagerFactory.close();
-
     }
 }

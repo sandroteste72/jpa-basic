@@ -61,11 +61,11 @@ public class State {
         this.initials = initials;
     }
 
-    public List<Aluno> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Aluno> students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 
